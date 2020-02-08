@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue set,delete,watch</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+
+   {{user.name}}
+    <button @click="updateData">updateData</button>
+    <button @click="addData">addData</button>
+    <button @click="removeData">removeData</button>
+    <p>{{user.age}}</p>
+
+    <input type="text" v-model="address">
+    <p>{{address}}</p>
+    <hr>
+    <input type="text" v-model="user.height">
+    <p>{{user.height}}</p>
+</div>
+
+<script>
+    let vm = new Vue({
+        el:'div',
+        data:{
+            user:{
+                name:'tom',
+                height:300
+            },
+            address:'guiyang',
+        },
+        watch:{
+          // "user.height":(newValue,oldValue)=>{
+          //     console.log("new:"+newValue+",old:"+oldValue);
+          // }
+            user:{
+                handler:(newValue,oldValue)=>{
+                    console.log("new:"+newValue+",old:"+oldValue);
+                },
+                deep:true
+            }
+        },
+        methods:{
+            updateData(){
+                this.user.name="jack";
+            },
+            addData(){
+                //this.$set(this.user,"age",100);
+                Vue.set(this.user,"age",5000);
+                console.log(this.user);
+            },
+            removeData(){
+                if (this.user.age){
+                    //delete this.user.age;
+                    //this.$delete(this.user,'age');
+                    Vue.delete(this.user,'age');
+                }
+            }
+        }
+
+    });
+
+    vm.$watch("address",function (newVal,oldVal) {
+        console.log("address update");
+        console.log(newVal,oldVal);
+    })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <script src="vue.js"></script>
+    <script>
+
+        Vue.config.keyCodes.f1 = 112;
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    arr:[1,2,3],
+                    flag:true,
+                },
+                methods:{
+                   show(e){
+                      //console.log(e);
+                       //console.log('show');
+                      // e.stopPropagation();
+                      // e.preventDefault();
+                       console.log(e.keyCode);
+                   },
+                    print(e){
+                        console.log('print');
+                    },
+                    talk(){
+                       console.log("f1\n");
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div>
+   <!--<p @click="print($event)">-->
+       <!--<button @click="show($event)">haha</button>-->
+       <!--<button @click.stop="show()">haha</button>-->
+       <!--<a href="#" @click.stop="show($event)">haha</a>-->
+       <!--<textarea @keypress="show($event)">click</textarea>-->
+       <!--<textarea @keypress.13="talk">text</textarea>-->
+       <!--<textarea @keypress.enter="talk">text</textarea>-->
+       <textarea @keypress.f1="talk">text</textarea>
+   <!--</p>-->
+</div>
+
+
+
+</body>
+</html>

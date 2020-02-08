@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    arr:[1,2,3,4,5],
+                    users:{id:1,name:'jack',age:200},
+                    arr2:[1,2,3,4,5,5],
+                    obj:[
+                        {id:1,'name':'b',age:1},
+                        {id:2,'name':'c',age:2},
+                        {id:3,'name':'d',age:3},
+                    ]
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div>
+   <ul>
+       <!--<li v-for="value in arr">{{value}}</li>-->
+       <!--<li v-for="value in users">{{value}}</li>-->
+       <!--<li v-for="value,key in users">{{key}}-{{value}}</li>-->
+       <!--<li v-for="(v,k) in arr2" :key="k">{{k}}&#45;&#45;{{v}}</li>-->
+       <li v-for="(user,index) in obj">
+           {{index}}={{user.id}}--{{user.name}}--{{user.age}}
+       </li>
+   </ul>
+
+
+</div>
+
+
+
+</body>
+</html>

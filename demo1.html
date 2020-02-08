@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function (e) {
+
+            Vue.config.devtools = false;
+            new Vue({
+                el:'#test',
+                data:{
+                    msg:'hi,world'
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+
+<div id="test">{{msg}}</div>
+</body>
+</html>

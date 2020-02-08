@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性绑定</title>
+    <script src="vue.js"></script>
+    <script>
+
+        Vue.config.keyCodes.f1 = 112;
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    url:"https://cdn.learnku.com//uploads/communities/WtC3cPLHzMbKRSZnagU9.png!/both/44x44",
+                    b:0,
+                    w:10,
+                    h:10,
+                    css:'aa',
+                    cssb:'dd',
+                }
+            });
+        };
+    </script>
+    <style>
+        .aa{
+            color:red;
+            font-size:50px;
+        }
+        .dd{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+<div>
+  <img v-bind:src="url"/>
+  <img :src="url" :height="h" :width="w"/>
+    <p :class="css">bbb</p>
+    <h5 :class="[css,cssb]">h5</h5>
+
+    <p :class="{aa:true,dd:true}">样式属性</p>
+
+    <p :class="{aa:b>0}">样式属性1</p>
+</div>
+
+
+
+</body>
+</html>

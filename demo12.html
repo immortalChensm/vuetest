@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+    <script src="vue.js"></script>
+    <script src="axios.min.js"></script>
+    <script>
+
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{//普通属性
+                    text:'hi china',
+                    num:100,
+                },
+                computed:{//计算属性
+                    msg:function () {
+                        return "nothing!";
+                    },
+                    reverseText:function () {
+                        return this.text.split(' ').reverse().join(' ');
+                    },
+                    getNums:{
+                        get:function () {
+                            return this.num-1;
+                        },
+                        set:function (val) {
+                            this.num=val;
+                        }
+                    }
+                },
+                methods:{
+                    changes(){
+                        this.text="hi japanese";
+                    },
+                    refresh(){
+                        this.text="hi china";
+                    },
+                    getNum:function () {
+                        return this.num-1;
+                    },
+                    changeNum(){
+                        this.getNums=200;
+                    }
+                }
+
+            });
+        };
+    </script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+<div>
+
+    <button @click="changes">change</button>
+    <button @click="refresh">refresh</button>
+    <p>{{msg}}
+
+    <h5>{{text.split(' ').reverse().join(' ')}}</h5>
+
+    <h2>{{reverseText}}</h2>
+
+    <p>{{num}}</p>
+    <p>{{getNum()}}</p>
+    <hr>
+    <p>{{getNums}}</p>
+    <button @click="changeNum">changeNum</button>
+</div>
+
+
+
+</body>
+</html>

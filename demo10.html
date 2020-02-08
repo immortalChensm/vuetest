@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+    <script src="vue.js"></script>
+    <script>
+
+        function test(str,obj)
+        {
+            alert(464623);
+        }
+
+        window.Chen=function(obj){
+
+          this.names=obj.names;
+          this.talk=function () {
+              console.log(this.names);
+          }
+        };
+
+        Vue.config.keyCodes.f1 = 112;
+        Vue.filter('addZero',function (value) {
+            return value<10?'0'+value:value;
+        });
+        Vue.filter("number",(data,n)=>{
+            console.log(data,n);
+
+        });
+        window.onload=function (e) {
+
+            window.test("ss",33);
+            let c = new Chen({
+                names:"chenshuimu"
+            });
+            c.talk();
+
+            new Vue({
+                el:'div',
+                data:{
+                   msg:8,
+                    n:100.322,
+                    time:Date.now(),
+                    times:Date['now'](),
+                },
+                filters:{
+                    hello:(data,n)=>function () {
+                        console.log(data,n);
+                    }
+                }
+
+            });
+        };
+    </script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+<div>
+    <p>{{msg | addZero}}</p>
+    <p>{{n | number(3)}}</p>
+    <p>{{time}}</p>
+    <p>{{times}}</p>
+
+    {{time | hello(346668)}}
+</div>
+
+
+
+</body>
+</html>

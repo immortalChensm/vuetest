@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue自定义组件、标签</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+    <hello></hello>
+    <world></world>
+    <china>bb</china>
+
+    <japanese></japanese>
+    <hr>
+    <american></american>
+    <hr>
+    <template id="nameList">
+        <div>
+            <h3>{{msg1}}</h3>
+            <ul>
+                <li v-for="(value,key) in nameLists">{{key}}--{{value}}</li>
+            </ul>
+        </div>
+    </template>
+
+    <test></test>
+</div>
+
+<script>
+
+    //自定义全局组件/标签
+    var myHtmlTag = Vue.extend({
+        template:"<h3>Hello World</h3>"
+    });
+
+    Vue.component("hello",myHtmlTag);
+    Vue.component("world",{
+        template:"<p>你好，世界</p>"
+    });
+
+    Vue.component("japanese",{
+        template:"<p>{{name}}</p>",
+        data:function () {
+            return {
+              name:"japanese"
+            };
+        }
+    });
+    let vm = new Vue({
+        el:'div',
+        data:{
+            address:'guiyang',
+            name:'tom'
+        },
+        components:{//自定义组件/标签
+            china:{
+                template:"<p style='color:green'>china is ok</p>"
+            },
+            american:{
+                template:"<p>{{msg}}</p>",
+                data(){
+                    return {
+                        msg:"老美"
+                    }
+                }
+            },
+            test:{//引用模板
+                name:"csm",
+                template:'#nameList',
+                data(){
+                    return {
+                        msg1:"名字列表",
+                        nameLists:["jack","tom","lucy"]
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

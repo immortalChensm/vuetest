@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指令</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    users:[
+                        {id:1,name:'jack',age:100},
+                        {id:2,name:'tom',age:100},
+                    ],
+                    user:{},
+                    rowIndex:-1,
+                },
+                methods:{
+                    addUser(){
+                        this.users.push(this.user);
+                    },
+                    deleteUser(index){
+                        //console.log(index);
+                        this.users.splice(this.rowIndex,1);
+                    },
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div>
+   <h3>添加用户</h3>
+    <input type="text" v-model="user.name" placeholder="姓名"/>
+    <input type="text" v-model="user.age" placeholder="年龄"/>
+    <button v-on:click="addUser">add</button>
+    <h3>列表</h3>
+    <ul>
+        <li v-for="(value,index) in users">
+            {{index}}--{{value.name}}--{{value.age}}-<span v-on:click="deleteUser(index)">删除<span>
+        </li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

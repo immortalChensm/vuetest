@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue自定义指令</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+<p v-hello @click="updateDirective">
+    {{address}}
+</p>
+
+    <p v-world:haha.hehe.jack.china="name">{{address}}</p>
+
+    <p v-chen="baba">{{address}}</p>
+
+    <p v-focus:check.abc="babama">{{address}}</p>
+</div>
+
+<script>
+    Vue.directive("hello",{
+        bind(){
+            console.log("bind");
+        },
+        inserted(){
+            console.log("inserted");
+        },
+        update(){
+            console.log("update");
+        },
+        componentUpdated(){
+            console.log("componentUpdated");
+        },
+        unbind(){
+            console.log("unbind");
+        }
+    });
+    Vue.directive("world",{
+        bind(el,binding){
+            console.log(el);
+            console.log(binding);
+        }
+    });
+
+    Vue.directive("chen",function (el,binding) {
+        console.log("chen");
+    })
+    let vm = new Vue({
+        el:'div',
+        data:{
+            address:'guiyang',
+            name:'tom'
+        },
+        methods:{
+            updateDirective(){
+                this.address="贵阳";
+            }
+        },
+        directives:{
+            focus(el,binding){
+                console.log("这里是选项自定义指令");
+                console.log(el,binding);
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

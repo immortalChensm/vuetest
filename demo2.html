@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function (e) {
+            new Vue({
+                //el:'#test',
+                //el:'.test',
+               // el:'div',
+                el:'body',
+                data:{
+                    name:'',
+                    age:100,
+                    flag:false,
+                    nums:[1,2,3,4,],
+                    users:{id:122,name:'jack'}
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<!--<div id="test">-->
+<!--<div class="test">-->
+<div>
+    <input type="text" v-model="name"/>
+    <br/>
+    {{name}}<br/>
+    {{age}}<br/>
+    {{flag}}<br/>
+    {{nums}}<br/>
+    {{users}}
+</div>
+
+
+
+</body>
+</html>

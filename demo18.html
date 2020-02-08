@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue父子组件及之间数据传递</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="container">
+    <my-hello></my-hello>
+</div>
+<template id="hello">
+    <div>
+        <h3>我是父组件</h3>
+        <p>访问自己的数据：{{name}}:{{age}}::{{user.userName}}</p>
+        <my-world :message="name" :age="age" :user="user"></my-world>
+
+    </div>
+</template>
+
+<template id="world">
+    <div>
+        <h3>我是子组件</h3>
+        <p>我能访问父组件的数据：{{message}} {{age}} {{user.userName}}</p>
+    </div>
+</template>
+<script>
+
+    let vm = new Vue({
+        el:'#container',
+        components:{//父组件
+            'my-hello':{
+                template:'#hello',
+                data(){
+                    return {
+                        age:100,
+                        name:'jack',
+                        user:{
+                            id:100,
+                            userName:'tom'
+                        }
+                    };
+                },
+                components:{//子组件
+                    'my-world':{
+                        template:'#world',
+                        //props:['message','age','user'],//获取父组件传递的数据
+                        //https://cn.vuejs.org/v2/guide/components-props.html#Prop-%E9%AA%8C%E8%AF%81
+                        props:{
+                            message:String,
+                            age:{
+                                type:Number,
+                                default:18,
+                                validator:function () {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

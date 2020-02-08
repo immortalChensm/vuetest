@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="vue.js"></script>
+    <script src="axios.min.js"></script>
+    <script>
+
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+
+                },
+                methods:{
+                    send(){
+                        axios({
+                            method:'get',
+                            url:'users.json',
+                        }).then(function (response) {
+                            console.log(response);
+                        }).catch((res=>{
+                            console.log(res);
+                        }))
+                    }
+                }
+
+            });
+        };
+    </script>
+    <style>
+
+    </style>
+
+</head>
+<body>
+<div>
+    <button @click="send">ajax</button>
+</div>
+
+
+
+</body>
+</html>

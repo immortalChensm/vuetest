@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue自定义组件/动态组件</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+    <button @click="flag='hello'">hello</button>
+    <button @click="flag='world'">world</button>
+    <div>
+        <keep-alive>
+            <component :is="flag"></component>
+        </keep-alive>
+    </div>
+</div>
+
+<script>
+
+
+    let vm = new Vue({
+        el:'div',
+        data:{
+            address:'guiyang',
+            name:'tom',
+            flag:"world"
+        },
+        components:{//自定义组件/标签
+            hello:{
+                template:"<p style='color:green'>我是hello标签:{{x}}</p>",
+                data(){
+                    return {
+                        x:Math.random()
+                    }
+                }
+            },
+            world:{
+                template:"<p>我是world标签:{{y}}</p>",
+                data(){
+                    return {
+                        y:Math.random()
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <script src="vue.js"></script>
+    <script>
+
+        Vue.config.keyCodes.f1 = 112;
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    b:100,
+                    c:"<h5>vue</h5>",
+                    msg:88
+                },
+                created:function () {
+                    alert(22)
+                }
+            });
+        };
+    </script>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <p v-cloak>{{b}}</p>
+    <p v-text="b"></p>
+    <p v-html="c"></p>
+
+    <input type="text" v-model="msg"/>
+    <p>{{msg}}</p>
+    <p v-html="msg"></p>
+    <p v-once>{{msg}}</p>
+    <p v-pre>{{msg}}</p>
+</div>
+
+
+
+</body>
+</html>

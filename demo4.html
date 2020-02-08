@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function (e) {
+            new Vue({
+                el:'div',
+                data:{
+                    arr:[1,2,3]
+                },
+                methods:{
+                    show:function () {
+                        console.log(123);
+                    },
+                    add(){
+                        console.log(666);
+                        //console.log(this);
+                        this.arr.push(888);
+                        this.show();
+                    },
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div>
+   <button v-on:click="show">click me</button>
+    <button v-on:click="add">add some data to arr</button>
+    {{arr}}<br/>
+</div>
+
+
+
+</body>
+</html>

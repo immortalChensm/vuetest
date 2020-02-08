@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue实例的属性和方法</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+
+   {{text}}
+    {{num}}
+    <p ref="hello">nihao</p>
+</div>
+
+<script>
+    let vm = new Vue({
+        //el:'div',
+        data:{//普通属性
+            text:'hi china',
+            num:100,
+        }
+
+    });
+
+    vm.$mount("div");//挂载
+    console.log(vm);
+    console.log(vm.$el);
+    console.log(vm.$options)
+    console.log(vm.$refs.hello)
+    vm.$refs.hello.style.color="red";
+
+    vm.$destroy();
+    console.log(vm.text);
+
+</script>
+
+</body>
+</html>

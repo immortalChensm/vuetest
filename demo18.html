@@ -13,7 +13,8 @@
     <div>
         <h3>我是父组件</h3>
         <p>访问自己的数据：{{name}}:{{age}}::{{user.userName}}</p>
-        <my-world :message="name" :age="age" :user="user"></my-world>
+        <p>访问子组件的数据：{{sex}}--{{height}}</p>
+        <my-world :message="name" :age="age" @e-world="getData"></my-world>
 
     </div>
 </template>
@@ -22,38 +23,66 @@
     <div>
         <h3>我是子组件</h3>
         <p>我能访问父组件的数据：{{message}} {{age}} {{user.userName}}</p>
+        <p>访问自己的数据：{{sex}}--{{height}}</p>
+        <button @click="sendData">向父组件传递数据</button>
     </div>
 </template>
 <script>
-
+    //props down ,event up 完成父子间数据传递
     let vm = new Vue({
         el:'#container',
         components:{//父组件
             'my-hello':{
+                methods:{
+                    getData(sex,height){//监听子组件的数据发送事件
+                        this.sex=sex;
+                        this.height=height;
+                    }
+                },
                 template:'#hello',
                 data(){
                     return {
-                        age:100,
+                        age:155,
                         name:'jack',
                         user:{
                             id:100,
                             userName:'tom'
-                        }
+                        },
+                        sex:0,
+                        height:0
                     };
                 },
-                components:{//子组件
+                components:{//
                     'my-world':{
+                        data(){
+                            return {
+                                sex:'female',
+                                height:160,
+                            };
+                        },
                         template:'#world',
                         //props:['message','age','user'],//获取父组件传递的数据
                         //https://cn.vuejs.org/v2/guide/components-props.html#Prop-%E9%AA%8C%E8%AF%81
-                        props:{
+                        props:{//来自父组件的数据  同时做数据类型校验等操作
                             message:String,
                             age:{
                                 type:Number,
                                 default:18,
-                                validator:function () {
-                                    
+                                validator:function (value) {
+                                    return value>=10;
                                 }
+                            },
+                            user:{
+                                type:Object,
+                                default:function () {
+                                    return {id:9501,'userName':'haha'};
+                                }
+                            },
+                        },
+                        methods:{
+                            sendData(){
+                                //发送一个数据事件
+                                this.$emit('e-world',this.sex,this.height);
                             }
                         }
                     }

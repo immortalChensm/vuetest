@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue单向数据流</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="container">
+    {{name}}
+    <input type="text" v-model="name">
+    {{user.age}}
+    <my-hello :name.sync="name" :user="user"></my-hello>
+</div>
+<template id="hello">
+    <div>
+        <h3>我是子组件:{{name}}
+            <p>{{user.age}}</p>
+            <button @click="change"></button>
+    </div>
+</template>
+
+
+<script>
+    //props down ,event up 完成父子间数据传递
+    let vm = new Vue({
+        el:'#container',
+        data:{
+            name:'jack',
+            user:{
+                name:'tom',
+                age:200
+            }
+        },
+        components:{
+            'my-hello': {
+                template: '#hello',
+                props:['name','user'],
+                data(){
+                    return {
+                        userName:this.name
+                    };
+                },
+                methods:{
+                    change(){
+                        //this.name='bbb'; 子组件不能修改父组件下的数据  即单向
+                        //this.userName='haha';
+                        //子组件能同时更新父组件的数据
+                        //this.$emit("update:name","haha");
+                        this.user.age=16;
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

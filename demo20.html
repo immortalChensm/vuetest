@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue非父子间组件</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="container">
+    <my-a></my-a>
+    <my-b></my-b>
+    <my-c></my-c>
+</div>
+<template id="a">
+    <div>
+        <h3>我是a组件:{{name}}</h3>
+        <button @click="sendData">发送数据给C组件</button>
+    </div>
+</template>
+<template id="b">
+    <div>
+        <h3>我是b组件:{{age}}</h3>
+    </div>
+</template>
+<template id="c">
+    <div>
+        <h3>我是c组件:{{address}}</h3>
+    </div>
+</template>
+
+
+<script>
+    //props down ,event up 完成父子间数据传递
+    var event = new Vue();
+    var A = {
+        template:'#a',
+        data(){
+            return {
+                name:'lucy'
+            };
+        },
+        methods:{
+            sendData(){
+                event.$emit('data-a',this.name);
+            }
+        }
+    };
+    var B = {
+        template:'#b',
+        data(){
+            return {
+                age:500
+            };
+        },
+        mounted(){
+            event.$emit("data-b",this.age);
+        }
+    };
+    var C = {
+        template:'#c',
+        data(){
+            return {
+                address:'贵阳',
+                age:0
+            };
+        },
+        mounted(){
+            event.$on("data-a",name=>{
+                console.log("组件c接受到数据了");
+              console.log(name);
+            });
+            event.$on("data-b",age=>{
+                console.log("来自组件b的数据");
+               console.log(age);
+            });
+        }
+    };
+    let vm = new Vue({
+        el:'#container',
+        components:{
+            'my-a':A,
+            'my-b':B,
+            'my-c':C
+        }
+    });
+
+</script>
+
+</body>
+</html>

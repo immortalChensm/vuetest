@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue slot内置组件</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="container">
+    <my-chen>
+        <ul slot="a">
+            <li>a</li>
+        </ul>
+        <ul slot="b">
+            <li>b</li>
+        </ul>
+    </my-chen>
+</div>
+
+<template id="chen">
+    <div>
+        <slot name="a"></slot>
+        <p>hahaba</p>
+        <slot name="b"></slot>
+        <slot>c</slot>
+    </div>
+</template>
+
+<script>
+    //props down ,event up 完成父子间数据传递
+
+    let vm = new Vue({
+        el:'#container',
+        components:{
+            'my-chen':{
+                template:'#chen'
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

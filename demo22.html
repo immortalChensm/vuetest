@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue 路由</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+</head>
+<body>
+<div id="container">
+    <h5>APP</h5>
+    <p>
+        <router-link to="/home">home</router-link>
+        <router-link to="/user">user</router-link>
+    </p>
+    <div>
+        <router-view></router-view>
+    </div>
+</div>
+
+
+<script>
+
+    var home={
+      template:'<h2>home page</h2>'
+    };
+    var user = {
+      template:'<h2>user page</h2>'
+    };
+
+    const routes = [
+        {path:"/home",component:home},
+        {path:"/user",component:user},
+        {path:"*",redirect:"/home"},//默认路由
+    ];
+
+    const router = new VueRouter({
+        routes,
+        mode:'history',
+        linkActiveClass:'activeba'
+    });
+    let vm = new Vue({
+        el:'#container',
+        router
+    });
+
+</script>
+
+</body>
+</html>

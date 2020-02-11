@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue 路由嵌套和参数传递</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+</head>
+<body>
+<div id="container">
+    <h5>APP</h5>
+    <p>
+        <router-link to="/home">home</router-link>
+        <router-link to="/user">user</router-link>
+    </p>
+    <div>
+        <router-view></router-view>
+    </div>
+    <hr>
+    <button @click="route">add route</button>
+    <button @click="replace">replace route</button>
+</div>
+<template id="user">
+    <div>
+        <h1>user center</h1>
+        <ul>
+            <!--<li><router-link to="/user/login">login</router-link></li>-->
+            <!--<li><router-link to="/user/register">register</router-link></li>-->
+            <router-link to="/user/login?name=jack&age=100" tag="li">login</router-link>
+            <router-link to="/user/register/guiyang/beijing" tag="li">register</router-link>
+        </ul>
+        <router-view></router-view>
+    </div>
+</template>
+
+
+<script>
+
+    var home={
+      template:'<h2>home page</h2>'
+    };
+    var user = {
+      template:'#user'
+    };
+
+    var login = {
+      template:'<h5>user login page params:{{$route.query.name}} -- {{$route.path}}</h5>'
+    };
+    var register = {
+        template:'<h5>user register page params:{{$route.params}} -- {{$route.path}}</h5>'
+    };
+    const routes = [
+        {path:"/home",component:home},
+        {
+            path:"/user",
+            component:user,
+            children:[
+                {
+                    path:"login",
+                    component:login
+                },
+                {
+                    path:"register/:account/:pwd",
+                    component:register
+                }
+            ]
+        },
+        {path:"*",redirect:"/home"},//默认路由
+    ];
+
+    const router = new VueRouter({
+        routes,
+        mode:'hash',
+        linkActiveClass:'activeba'
+    });
+    let vm = new Vue({
+        el:'#container',
+        router,
+        methods:{
+            route(){
+                router.push({path:"/home"});
+            },
+            replace(){
+                router.replace({path:"/user"});
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let [a, b, c] = [1, 2, 3];
+    //console.log(a,b,c);
+    //let [foo, [[bar], baz]] = [1, [[2], 3]];
+    //console.log(foo,bar,baz);
+
+    //let [china,japanese,korean] = ["beijing","dj","sr"];
+    //console.log(china,japanese,korean);
+
+    //let [x, y, z] = new Set(['a', 'b', 'c']);
+    //console.log(x,y,z);
+
+    //默认值
+    //let [a=1,b=2,c=3] = [100,200,undefined];
+    //console.log(a,b,c);
+
+    //let {city,address} = {city:'贵阳',address:'北京'};
+    //.log(city,address);
+    //let {bar} = {city:'guiyang'};
+    //console.log(bar);
+    //let {foo} = {foo:{id:100,name:'jack',age:100}};
+    //console.log(foo);
+
+    //将对象的方法解构赋值给变量
+    let obj = {
+        talk:function () {
+            console.log(1);
+        },
+        say:function () {
+            console.log(2);
+        },
+        account:[
+            100,
+            {id:100,name:"lucy"}
+        ]
+    };
+    //let {talk,say}=obj;
+    //let {talk:t,say:s}=obj;
+    //talk();
+    //say();
+    //t();
+    //s();
+
+    //let {talk,say,account:[age,{id,name}]}=obj;
+    let {talk,say,account,account:[age,{id,name}]}=obj;
+    console.log(age,id,name);
+    console.log(account);
+    // let obj = {
+    //     p: [
+    //         'Hello',
+    //         { y: 'World' }
+    //     ]
+    // };
+    //
+    // let { p: [x, { y }] } = obj;
+    // console.log(p,x,y);
+</script>
+</body>
+</html>

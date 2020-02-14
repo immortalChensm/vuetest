@@ -1,0 +1,9 @@
+<template>
+  <button>BTN</button>
+</template>
+<style>
+  button{
+    background:black;
+    color:red;
+  }
+</style>

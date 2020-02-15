@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6389c9b0-a1ae-4b56-b079-67abffd2a7b0" name="Default" comment="" />
+    <list default="true" id="6389c9b0-a1ae-4b56-b079-67abffd2a7b0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ES6/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/const.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +34,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="const.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="const.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/const.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="string.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/string.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/tags.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -112,6 +135,8 @@
         <option value="$PROJECT_DIR$/ES6/let.js" />
         <option value="$PROJECT_DIR$/ES6/let2.js" />
         <option value="$PROJECT_DIR$/ES6/const.js" />
+        <option value="$PROJECT_DIR$/ES6/string.js" />
+        <option value="$PROJECT_DIR$/ES6/tags.js" />
       </list>
     </option>
   </component>
@@ -185,17 +210,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.const.js">
+  <component name="RunManager" selected="Node.js.tags.js">
     <configuration name="const.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="const.js" working-dir="$PROJECT_DIR$/ES6" />
     <configuration name="let2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="let2.js" working-dir="$PROJECT_DIR$/ES6" />
     <configuration name="let.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="let.js" working-dir="$PROJECT_DIR$/ES6" />
+    <configuration name="string.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="string.js" working-dir="$PROJECT_DIR$/ES6" />
+    <configuration name="tags.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="tags.js" working-dir="$PROJECT_DIR$/ES6" />
     <list>
       <item itemvalue="Node.js.let.js" />
       <item itemvalue="Node.js.let2.js" />
       <item itemvalue="Node.js.const.js" />
+      <item itemvalue="Node.js.string.js" />
+      <item itemvalue="Node.js.tags.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.tags.js" />
+        <item itemvalue="Node.js.string.js" />
         <item itemvalue="Node.js.const.js" />
         <item itemvalue="Node.js.let2.js" />
         <item itemvalue="Node.js.let.js" />
@@ -221,12 +252,12 @@
       <workItem from="1581486881576" duration="6977000" />
       <workItem from="1581570739625" duration="6678000" />
       <workItem from="1581658519159" duration="13312000" />
-      <workItem from="1581743394073" duration="5571000" />
+      <workItem from="1581743394073" duration="7037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97205000" />
+    <option name="totallyTimeSpent" value="98671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -284,20 +315,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -641,8 +658,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/const.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/string.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/tags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>

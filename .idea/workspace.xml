@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6389c9b0-a1ae-4b56-b079-67abffd2a7b0" name="Default" comment="" />
+    <list default="true" id="6389c9b0-a1ae-4b56-b079-67abffd2a7b0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,20 +13,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="let和const.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/let和const.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state relative-caret-position="66">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="变量的解构赋值.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ES6/变量的解构赋值.html">
+      <file leaf-file-name="vue.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/node_modules/vue/dist/vue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            <state relative-caret-position="175">
+              <caret line="4264" column="73" selection-start-line="4264" selection-start-column="70" selection-end-line="4264" selection-end-column="73" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/component/user/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/component/user/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -90,6 +130,12 @@
         <option value="$PROJECT_DIR$/Vue/vue-cli-demo/src/App.vue" />
         <option value="$PROJECT_DIR$/ES6/let和const.html" />
         <option value="$PROJECT_DIR$/ES6/变量的解构赋值.html" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/component/login.vue" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/component/login.js" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/main.js" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/App.vue" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/component/user/login.js" />
+        <option value="$PROJECT_DIR$/Vue/component-demo/src/component/user/index.js" />
       </list>
     </option>
   </component>
@@ -100,6 +146,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Vue/component-demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/Vue/vue-cli-demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/Vue/vue-cli-test/node_modules" />
     <handled-path value="$PROJECT_DIR$/webpack-demo/node_modules" />
@@ -116,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,10 +175,70 @@
               <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ES6" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component-demo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,6 +249,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wwww\vue\Vue\component-demo\src\component\user" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\wwww\vue" />
     </key>
@@ -178,14 +287,16 @@
       <workItem from="1581486881576" duration="6977000" />
       <workItem from="1581570739625" duration="6678000" />
       <workItem from="1581658519159" duration="13312000" />
+      <workItem from="1581743394073" duration="2522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91634000" />
+    <option name="totallyTimeSpent" value="94156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -194,7 +305,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288956" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -214,7 +326,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19742814" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -238,24 +350,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack-demo/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/dist/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1848">
@@ -376,9 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="2919" column="18" selection-start-line="2919" selection-start-column="9" selection-end-line="2919" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="11958" column="3" lean-forward="true" selection-start-line="11958" selection-start-column="3" selection-end-line="11958" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -403,9 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -420,9 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo9.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/demo11.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -494,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#328#353#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -518,26 +597,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-demo/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-demo/.babelrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/node_modules/.bin/babylon.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/node_modules/.bin/cross-env.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/node_modules/.bin/cssesc.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/node_modules/.bin/esparse">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,9 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,29 +618,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/node_modules/.bin/which">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vue-cli-test/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/let和const.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -595,8 +637,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/变量的解构赋值.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="51">
+          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/let和const.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/component/user/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/node_modules/vue/types/vue.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/src/component/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/component-demo/node_modules/vue/dist/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="4264" column="73" selection-start-line="4264" selection-start-column="70" selection-end-line="4264" selection-end-column="73" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

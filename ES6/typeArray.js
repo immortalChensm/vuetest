@@ -49,3 +49,6 @@ tb9[2]=50;//2
 
 
 console.log(tb8,tb9);
+
+//更多示例
+//https://www.jianshu.com/p/5a841d6d7cc3

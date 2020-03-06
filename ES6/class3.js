@@ -56,3 +56,18 @@ $teacher = new Teacher("huahua");
 // console.log($teacher.num);
 // console.log(Teacher.num);
 // console.log($teacher.gg());
+// function echo(str,...value) {
+//     console.log(value);
+// }
+class network{};
+
+$network = new network();
+$network['onMessage'] = function () {
+  return "data";
+};
+$network['onClose'] = function () {
+    return "close";
+};
+
+echo `${$network.onMessage()}`;
+

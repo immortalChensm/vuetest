@@ -18,3 +18,9 @@ export function baba() {
 export function test() {
     console.log(123);
 }
+
+export default {
+    show(){
+        return "show function";
+    }
+}

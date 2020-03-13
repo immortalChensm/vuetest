@@ -22,4 +22,10 @@
 //   }
 // };
 
-export {ma} from "./m6.js";
+//export {ma} from "./m6.js";
+export default {
+    name:"tom",
+    getName(){
+        console.log(this.name);
+    }
+}

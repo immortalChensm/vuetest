@@ -19,8 +19,8 @@ export function test() {
     console.log(123);
 }
 
-export default {
-    show(){
-        return "show function";
-    }
-}
+// export default {
+//     show(){
+//         return "show function";
+//     }
+// }
